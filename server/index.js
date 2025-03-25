@@ -11,8 +11,9 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/taskmanager";
-
+//const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/taskmanager";
+const MONGODB_URI = "mongodb+srv://abhinav17211:KqGjwU0AlI0MNb4R@cluster0.ixhjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+console.log(MONGODB_URI);
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
